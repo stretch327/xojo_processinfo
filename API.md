@@ -31,8 +31,11 @@ Ends an activity which was started with the BeginActivity method
 **Environment() As Dictionary**
 Returns the environment that was passed to the current process
 
-**Info() As ProcessInfo**
-Shared. Returns the shared ProcessInfo object.
+**Shared Info() As ProcessInfo**
+Shared. Returns the shared ProcessInfo object. This method exists for code readability and does the exact same thing as the Version method. 
+
+**Shared Version() as ProcessInfo**
+Shared. Returns the shared ProcessInfo object. This method exists for code readability and does the exact same thing as the Info method. 
 
 **Operator_Compare(version as string) As Integer**
 Compares the passed string with the operating system so you can easily check if the user is running the necessary OS version for the feature you are implementing.

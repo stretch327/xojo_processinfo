@@ -230,6 +230,16 @@ Protected Class ProcessInfo
 		End Sub
 	#tag EndMethod
 
+	#tag Method, Flags = &h0
+		Shared Function Version() As ProcessInfo
+		  If mSharedVersion = Nil Then
+		    mSharedVersion = New ProcessInfo
+		  End If
+		  
+		  Return mSharedVersion
+		End Function
+	#tag EndMethod
+
 
 	#tag ComputedProperty, Flags = &h0
 		#tag Getter
