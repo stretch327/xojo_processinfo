@@ -32,10 +32,10 @@ Ends an activity which was started with the BeginActivity method
 Returns the environment that was passed to the current process
 
 **Info() As ProcessInfo**
-*Description Missing*
+Shared. Returns the shared ProcessInfo object.
 
 **Operator_Compare(version as string) As Integer**
-*Description Missing*
+Compares the passed string with the operating system so you can easily check if the user is running the necessary OS version for the feature you are implementing.
 
 **PerformActivity(reason as string, method as ActivityMethod, paramarray options as NSActivityOptions)**
 Performs an activity in a particular method
